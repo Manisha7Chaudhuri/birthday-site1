@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffd6e0, #fff);
+}
+
+.slide {
+  display: none;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  display: flex;
+}
+
+img {
+  width: 250px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff4d88;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* First image (portrait) */
+.main-img {
+  width: 200px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Row for the other 3 images */
+.row-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.row-images img {
+  width: 150px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  max-width: 90%;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
