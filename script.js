@@ -29,7 +29,7 @@ function startExperience() {
 }
 
 function controlMusic() {
-  const main = document.getElementById("come-over");
+  const main = document.getElementById("come over");
   const special = document.getElementById("killinit");
 
   if (!main || !special) return;
@@ -48,11 +48,11 @@ function controlMusic() {
   }
 }
 function playMusic() {
-  const main = document.getElementById("come-over");
+  const main = document.getElementById("come over");
   main.play();
 }
 function testMusic() {
-  const main = document.getElementById("come-over");
+  const main = document.getElementById("come over");
   main.play().then(() => {
     console.log("playing");
   }).catch(err => {
@@ -61,7 +61,7 @@ function testMusic() {
 }
 
 function testVolume() {
-  const main = document.getElementById("come-over");
+  const main = document.getElementById("come over");
   main.volume = 0.1;
   main.play();
 }
