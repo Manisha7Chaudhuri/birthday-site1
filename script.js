@@ -38,7 +38,7 @@ function controlMusic() {
     main.pause();
 
     special.currentTime = 0;
-    special.volume = 0.4;   // 👈 set here
+    special.volume = 0.1;   // 👈 set here
     special.play().catch(() => {});
   } else {
     special.pause();
