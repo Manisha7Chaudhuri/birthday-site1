@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Poppins',sans-serif;
   text-align: center;
   background: linear-gradient(to bottom, #ffd6e0, #fff);
 }
@@ -53,6 +53,7 @@ button {
 
 
 h1 {
+
   font-size: 32px;
 }
 
@@ -60,7 +61,23 @@ h2 {
   font-size: 20px;
   padding: 0 10px;
 }
+h1, h2 {
+  color: #e05de4;
+  text-shadow: 0 0 10px rgba(152, 219, 140, 0.3);
+}
+.slide {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
 
+.slide.active {
+  display: flex;
+  opacity: 1;
+}
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
 p {
   font-size: 16px;
   max-width: 90%;
