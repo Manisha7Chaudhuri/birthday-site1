@@ -19,7 +19,8 @@ body {
 }
 
 img {
-  max-width: 90%;
+  width: 100%;
+  max-width: fit-content;
   height: auto;
   border-radius: 20px;
   margin: 10px;
@@ -36,8 +37,7 @@ button {
 
 /* First image (portrait) */
 .main-img {
-  width: 60%;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 /* Row for the other 3 images */
@@ -60,4 +60,23 @@ h2 {
 p {
   font-size: 16px;
   max-width: 90%;
+}
+
+@media (min-width: 768px) {
+
+  img {
+    max-width: 220px;
+  }
+
+  .main-img {
+    max-width: 180px;
+  }
+
+  .row-images {
+    flex-wrap: nowrap;
+  }
+
+  .row-images img {
+    max-width: 140px;
+  }
 }
