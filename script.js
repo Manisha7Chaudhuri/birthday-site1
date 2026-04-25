@@ -27,7 +27,7 @@ function startExperience() {
 
   nextSlide();
 }
-
+special.currentTime = 0;
 function controlMusic() {
   const main = document.getElementById("come over");
   const special = document.getElementById("killinit");
@@ -36,10 +36,12 @@ function controlMusic() {
 
   if (index === 2) {
     main.pause();
-
+    setTimeout(()=>{
     special.currentTime = 0;
     special.volume = 0.1;   // 👈 set here
     special.play().catch(() => {});
+    },200);
+    showLyrics();
   } else {
     special.pause();
 
@@ -51,5 +53,13 @@ function playMusic() {
   const main = document.getElementById("come over");
   main.play();
 }
+function showLyrics() {
+  const lines = document.querySelectorAll(".line");
 
+  lines.forEach((line, i) => {
+    setTimeout(() => {
+      line.classList.add("show");
+    }, i * 1950); // timing gap between lines
+  });
+}
 
