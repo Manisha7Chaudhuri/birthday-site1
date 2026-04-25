@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .active {
@@ -59,8 +60,4 @@ h2 {
 p {
   font-size: 16px;
   max-width: 90%;
-}
-
-.slide{
-  padding: 20px;
 }
