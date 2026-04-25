@@ -13,7 +13,9 @@ body {
   align-items: center;
   padding: 20px;
 }
-
+.slide {
+  overflow-y: auto;
+}
 .active {
   display: flex;
 }
@@ -54,7 +56,8 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
+  padding: 0 10px;
 }
 
 p {
