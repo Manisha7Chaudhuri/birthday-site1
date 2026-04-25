@@ -36,12 +36,14 @@ function controlMusic() {
 
   if (index === 2) {
     main.pause();
-    setTimeout(()=>{
+    
     special.currentTime = 0;
     special.volume = 0.1;   // 👈 set here
-    special.play().catch(() => {});
-    },200);
+    special.onplaying = () => {
     showLyrics();
+    special.onplaying = null; // prevent repeat
+  };
+  special.play().catch(() => {});
   } else {
     special.pause();
 
@@ -62,4 +64,5 @@ function showLyrics() {
     }, i * 1950); // timing gap between lines
   });
 }
+special.onplaying = null;
 
