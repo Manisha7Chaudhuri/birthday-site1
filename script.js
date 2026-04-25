@@ -13,12 +13,15 @@ function nextSlide() {
 }
 
 function startExperience() {
-  const main = document.getElementById("come-over");
+  const main = document.getElementById("come over");
 
   if (main) {
+    main.currentTime = 0;
     main.muted = false;
-    main.play().catch(err => {
-      console.log("Play blocked:", err);
+    main.play().then(() => {
+      console.log("Music started");
+    }).catch(err => {
+      console.log("Blocked:", err);
     });
   }
 
@@ -44,7 +47,10 @@ function controlMusic() {
     main.play().catch(() => {});
   }
 }
-
+function playMusic() {
+  const main = document.getElementById("come-over");
+  main.play();
+}
 function testMusic() {
   const main = document.getElementById("come-over");
   main.play().then(() => {
