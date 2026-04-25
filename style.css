@@ -9,13 +9,14 @@ body {
   display: none;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
+
+  justify-content: flex-start;  /* 👈 KEY CHANGE */
   align-items: center;
+
   padding: 20px;
-}
-.slide {
   overflow-y: auto;
 }
+
 .active {
   display: flex;
 }
