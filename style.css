@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Poppins',sans-serif;
   text-align: center;
-  background: linear-gradient(to bottom, #ffd6e0, #fff);
+  background: linear-gradient(to bottom, #ffd6e0, #e184ecb9);
 }
 
 .slide {
@@ -50,6 +50,13 @@ button {
   gap: 10px;
   flex-wrap: wrap;
 }
+.divya-img{
+  width: 85%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin: 15px 0;
+}
 
 
 h1 {
@@ -62,7 +69,7 @@ h2 {
   padding: 0 10px;
 }
 h1, h2 {
-  color: #e05de4;
+  color: #340a35;
   text-shadow: 0 0 10px rgba(152, 219, 140, 0.3);
 }
 .slide {
