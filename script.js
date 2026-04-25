@@ -12,9 +12,8 @@ function playMusic() {
   music.play();
 }
 function startExperience() {
-  const music = document.getElementById("bg-music");
-  music.play();
-
+  const main = document.getElementById("main-music");
+  main.play();
   nextSlide();
 }
 let slides = document.querySelectorAll(".slide");
