@@ -51,17 +51,5 @@ function playMusic() {
   const main = document.getElementById("come over");
   main.play();
 }
-function testMusic() {
-  const main = document.getElementById("come over");
-  main.play().then(() => {
-    console.log("playing");
-  }).catch(err => {
-    console.log("error:", err);
-  });
-}
 
-function testVolume() {
-  const main = document.getElementById("come over");
-  main.volume = 0.1;
-  main.play();
-}
+
