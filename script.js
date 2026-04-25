@@ -43,7 +43,7 @@ function controlMusic() {
   } else {
     special.pause();
 
-    main.volume = 0.2;      // 👈 set here
+    main.volume = 0.7;      // 👈 set here
     main.play().catch(() => {});
   }
 }
