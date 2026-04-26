@@ -90,8 +90,13 @@ p {
   max-width: 90%;
 }
 p1{
+  font-size: 17px;
   text-decoration-color: aqua;
   text-shadow: 0 0 8px rgba(61, 6, 24, 0.4)
+}
+p3{
+  font-size: 23px;
+  max-width: 90%;
 }
 
 @media (min-width: 768px) {
